@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Bootstrap  and css adding-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+   <!-- background image  -->
+  <div class= "bg-img">
+     <!-- Navigation bar  -->
+    <div class="navbar">
+      <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i> HOME</a>
+      <a href="aboutus.html"><i class="fa fa-fw fa-envelope"></i> About US</a>  
+      <a href="contactus.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a> 
+      <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
+     <!-- Register Form  -->
+    <h1 align="center">REGISTER</h1><br>
+    <center>  <label for="fname"><b>Firstname</b></label><br>
+    <input type="text" placeholder="Firstname" name="fname" id="fname" required><br>
+
+    <label for="lname"><b>Lastname</b></label><br>
+    <input type="text" placeholder="Lastname" name="lname" id="lname" required><br>
+
+    <laber for="gender"><b>Gender</b></laber><br><br>
+    <input type="radio" name="gender" id="gen" value="male" > <label for="male">Male</label>
+    <input type="radio" name="gender" id="gen" value="female"><label for="female">Female</label>
+    <input type="radio" name="gender" id="gen" value="others"><label for="others">Others</label><br><br>
+    
+    <label for="birthday"><b>Date Of Birth</b></label><br><br>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required><br>
+
+    <label for="phone"><b>Phonenumber</b></label><br><br>
+    <input type="tel" id="phone" name="Phonenumber"  required><br><br>
+
+    <label for="uname"><b>Username</b></label><br>
+    <input type="text" placeholder="Username" name="uname" id="uname" required><br>
+
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label><br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br>
+  
+    </center>
+   <!-- Button -->
+    <center><button type="submit" class="registerbtn">Register</button></center>
+  </div>
+</body>
+</html>

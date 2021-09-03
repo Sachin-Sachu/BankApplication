@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Bootstrap  and css adding-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="login.css">  
+    <script text="text/javascript" src="transaction.js"></script>
+</head>
+<body>
+
+<form action="action_page.php" method="post">
+   <!-- background image  -->
+  <div class= "bg-img">
+     <!-- Navigation Bar  -->
+    <div class="navbar">
+      <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i> HOME</a>
+      <a href="aboutus.html"><i class="fa fa-fw fa-envelope"></i> About US</a>  
+      <a href="contactus.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a> 
+      <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="register.html"><i class="fa fa-fw fa-user"></i> SignUp</a>
+    </div>
+     <!-- Adding Avatar  -->
+      <div class="imgcontainer">
+      <img src="avatar.png" alt="Avatar" class="avatar">
+      </div>
+    <!-- Login Form Container  -->
+    <div class="container">
+      <label for="acno"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="acno" name="acno" required>
+  
+      <label for="pwd"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="pwd" name="pwd" required>
+      <button type="submit" onclick="Bank.login()">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+     <!-- Button Container  -->
+    <div class="container" >
+      <button type="button" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </div>
+</form>
+</body>
