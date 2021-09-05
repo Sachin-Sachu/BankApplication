@@ -66,6 +66,17 @@ class Bank {
         }
 
     }
+// Display Account Details on Deposit Page
+static viewbal() {
+    var x = document.getElementById('acno').value;
+    var data = Bank.getAccountDetails();
+    if (x in data) {
+        let dname = data[x].name;
+        let dbal = data[x].balance;
+        document.getElementById('dname').innerHTML = "Hello, " + dname + "!";
+        document.getElementById('dbal').innerHTML = "Your current balance is ₹" + dbal + ".";
+    }
+}
 
 
 
