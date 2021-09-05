@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<head>
+     <!-- Bootstrap  and css adding-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="balance.css">
+    <script text="text/javascript" src="transaction.js"></script>
+</head>
+<body>
+    <!-- background image  -->
+    <div class= "bg-img">
+            <!-- Navigation Bar  -->
+            <div class="navbar">
+                <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+                <a href="userdashboard.html"><i class="fa fa-fw fa-envelope"></i> Dashboard</a> 
+                <a href="credit.html"><i class="fa fa-fw fa-user"></i> Credit</a>
+                <a href="debit.html"><i class="fa fa-fw fa-user"></i> Debit</a>
+                <a href="login.html"><i class="fa fa-fw fa-user"></i> Logout</a></div>
+            <!-- Credit Containing --> 
+            <div class= "container">
+           <h1 align="center">BALANCE</h1><br><br><br>
+           <center><h3 id="dname"></h3>
+            <h4 id="dbal"></h4></center><br><br>
+           <center><label for="acno"><b><h3> Account Number</h3></b></label><br><br>
+            <input class="form-control" oninput="Bank.viewbal()" type="number" maxlength="5"
+                placeholder="Enter account number" id="acno"><br></center>
+            </div>
+     </div>  
+</body>
+</html>
