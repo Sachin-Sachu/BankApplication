@@ -77,7 +77,4 @@ static viewbal() {
         document.getElementById('dbal').innerHTML = "Your current balance is ₹" + dbal + ".";
     }
 }
-
-
-
 }
